@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" id="xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="bar" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Chiranjivi Prakash</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a final year student and passionate frontend web developer, I have honed my skills in React.js, HTML, CSS, JavaScript, and various frontend frameworks. I am a highly organized and detail-oriented individual, with a strong work ethic and dedication to delivering high-quality work. I am a learning enthusiast and always seeking to expand my knowledge and skills in web development, and stay up-to-date with the latest trends and technologies in the field. As a frontend web developer, I have experience working in teams and handling deadlines, and I am always striving to exceed expectations. I am committed to creating visually stunning and user-friendly websites that leave a lasting impression. With my passion for programming and strong problem-solving skills, I am confident in my ability to contribute to any project.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>HTML is the standard markup language for Web pages</li>
+                            <li><span>CSS</span><br>CSS is the language we use to style an HTML document</li>
+                            <li><span>JavaScript</span><br>JavaScript is the programming language of the Web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Secondary From NDHS Bhelahi</li>
+                            <li><span>2020</span><br>Intermediate From Raja Ram Sah Raxaul</li>
+                            <li><span>2023-Current</span><br>B.tech From BCET Durgapur.</li>
+                            <!-- <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Real-Time Chat Application</span><br>The Real-Time Chat Application is a web-based platform that enables users
+                                to communicate with each other in real-time using text messages.</li>
+                            <li><span>Analog Clock</span><br>This Analog Clock Project will make you understand how actually clock works.i hope you will like this project.</li>
+                            <li><span>Portfolio</span><br>This Website design will be completely responsive for all screen devices like mobile phones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sed, officiis odio similique ducimus dicta. Reiciendis quasi ullam nobis dicta eum laudantium neque et delectus? Mollitia obcaecati iusto tempore velit quasi eius voluptatum dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sed, officiis odio similique ducimus dicta. Reiciendis quasi ullam nobis dicta eum laudantium neque et delectus? Mollitia obcaecati iusto tempore velit quasi eius voluptatum dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sed, officiis odio similique ducimus dicta. Reiciendis quasi ullam nobis dicta eum laudantium neque et delectus? Mollitia obcaecati iusto tempore velit quasi eius voluptatum dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/img-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>I used social media as an idea generator, trend mapper and strategic compass for all of our online business
+                            ventures.
+                        </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>prakashchiranjivi@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6204315171</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © chiranjivi Made with by <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+      <script src="script.js"></script>
+
+</body>
+</html>
+
